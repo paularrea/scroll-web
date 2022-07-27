@@ -27,7 +27,7 @@ const Work = () => {
       <SectionTitle title={JSON.section_title[locale]} />
       {JSON.latest_projects.map((project, i) => (
         <Link key={i} className={styles.card} to={`/work/${project.id}`}>
-          <MediaQuery maxWidth={820}>
+          <MediaQuery maxWidth={819}>
             <div className={styles.img_container}></div>
             <h3 style={{ textAlign: project.title_position }}>
               {project.title}

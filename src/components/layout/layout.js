@@ -9,8 +9,10 @@ const Layout = ({ children }) => {
   const [currentLocale, setCurrentLocale] = useState(locale);
 
   const handleChange = (e) => {
+    let url = window.location.href;
     setCurrentLocale(e.target.value);
     sessionStorage.setItem("LOCALE", e.target.value);
+    url.indexOf("work") > -1 && window.location.reload();
   };
 
   useEffect(() => {
