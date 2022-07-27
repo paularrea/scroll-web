@@ -5,8 +5,8 @@ import IntroText from "../scroll/Intro/IntroText";
 
 const Home = () => {
   return (
-    <div id="home" className={styles.container}>
-      <IntroText />
+    <div id="home">
+      {/* <IntroText /> */}
       <IntroAnimation />
     </div>
   );

@@ -23,6 +23,7 @@ const About = () => {
 
   return (
     <div id="about" className={styles.container}>
+      <br />
       <SectionTitle title={JSON.section_title[locale]} />
       <HorizontalAnimation />
     </div>

@@ -12,7 +12,7 @@ const IntroAnimation = () => {
         <Parallax translateY={[50, -50]} className={styles.scroll_1}>
           <Rocket />
         </Parallax>
-        <Parallax translateY={[20, -20]} className={styles.scroll_2}>
+        <Parallax translateY={[-80, 80]} className={styles.scroll_2}>
           <img src={background} alt="" />
         </Parallax>
         <div className={styles.scroll_3}>
