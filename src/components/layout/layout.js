@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
+import Footer from "../footer/Footer";
+import Header from "../header/Header";
+import styles from "./layout.module.scss";
 import { IntlProvider } from "react-intl";
-import { ParallaxProvider } from "react-scroll-parallax";
-import "./sass/App.scss";
-import AppRoutes from "./routes/Routes";
 
-function App() {
+const Layout = ({ children }) => {
   const locale = "en";
   const [currentLocale, setCurrentLocale] = useState(locale);
 
@@ -21,13 +21,18 @@ function App() {
     );
   }, [currentLocale]);
 
+  if (typeof window !== "undefined") {
+    require("smooth-scroll")('a[href*="#"]');
+  }
+
   return (
     <IntlProvider locale={currentLocale} defaultLocale={locale}>
-      <ParallaxProvider>
-        <AppRoutes currentLocale={currentLocale} handleChange={handleChange} />
-      </ParallaxProvider>
+      <div className={styles.container}>
+        <Header handleChange={handleChange} />
+        <main className={styles.page}>{children}</main>
+        <Footer />
+      </div>
     </IntlProvider>
   );
-}
-
-export default App;
+};
+export default Layout;

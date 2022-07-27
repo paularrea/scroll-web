@@ -1,0 +1,35 @@
+{
+    "nav": [{
+            "title": {
+                "en": "Home",
+                "es": "Inicio",
+                "cat": "Inici"
+            },
+            "id": "home"
+        },
+        {
+            "title": {
+                "en": "What we do",
+                "es": "Que hacemos",
+                "cat": "Què fem"
+            },
+            "id": "about"
+        },
+        {
+            "title": {
+                "en": "Our work",
+                "es": "Últimos proyectos",
+                "cat": "Darrers projectes"
+            },
+            "id": "work"
+        },
+        {
+            "title": {
+                "en": "Contact",
+                "es": "Contacto",
+                "cat": "Contacte"
+            },
+            "id": "contact"
+        }
+    ]
+}

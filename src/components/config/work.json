@@ -1,0 +1,72 @@
+{
+    "section_title": {
+        "en": "Our work",
+        "es": "Últimos proyectos",
+        "cat": "Darrers projectes"
+    },
+    "latest_projects": [{
+            "title": "Dos Nomad",
+            "client": "Dos Nomad",
+            "img": "",
+            "id": "dos-nomad",
+            "service": {
+                "en": "Art direction, branding, website design & development",
+                "es": "Dirección de arte, branding, diseño y desarrollo de la página web",
+                "cat": "Direcció d'art, branding, disseny i desenvolupament de la pàgina web"
+            },
+            "website": "dosnomad.com",
+            "gallery": [],
+            "start_position": -100,
+            "end_position": 70,
+            "title_position": "left"
+        },
+        {
+            "title": "Bacana Studio",
+            "client": "Bacana Studio",
+            "img": "",
+            "id": "bacana-studio",
+            "service": {
+                "en": "Website design & development",
+                "es": "Diseño y desarrollo de la página web",
+                "cat": "Disseny i desenvolupament de la pàgina web"
+            },
+            "website": "bacanastudio.com",
+            "gallery": [],
+            "start_position": 70,
+            "end_position": -100,
+            "title_position": "right"
+        },
+        {
+            "title": "Kolyy",
+            "client": "Petki labs",
+            "img": "",
+            "id": "kolyy",
+            "service": {
+                "en": "Website development",
+                "es": "Desarrollo de la página web",
+                "cat": "Desenvolupament de la pàgina web"
+            },
+            "website": "kolyy.com",
+            "gallery": [],
+            "start_position": -100,
+            "end_position": 70,
+            "title_position": "left"
+        },
+        {
+            "title": "Victory Switzerland",
+            "client": "Victory Switzerland",
+            "img": "",
+            "id": "victory-switzerland",
+            "service": {
+                "en": "Website development",
+                "es": "Desarrollo de la página web",
+                "cat": "Desenvolupament de la pàgina web"
+            },
+            "website": "victoryswitzerland.com",
+            "gallery": [],
+            "start_position": 70,
+            "end_position": -100,
+            "title_position": "right"
+        }
+    ]
+}

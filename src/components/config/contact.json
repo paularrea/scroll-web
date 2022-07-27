@@ -1,0 +1,45 @@
+{
+    "section_title": {
+        "en": "Contact",
+        "es": "Contacto",
+        "cat": "Contacte"
+    },
+    "title": {
+        "en": "We'd love to hear from you",
+        "es": "¿Tienes alguna idea? ¡Contáctanos!",
+        "cat": "Tens alguna idea? Contacta'ns!"
+    },
+    "sub_title": {
+        "en": "Need a hand? Let's talk about your website or project.\nHere's how to reach me.",
+        "es": "¿Necesitas ayuda? Hablamos de tu web o proyecto.\nAquí tienes cómo contactar con nosotros.",
+        "cat": "¿Necessites un cop de mà? Parlem de la teva web o projecte.\nAquí tens com contactar amb nosaltres."
+    },
+    "contact_links": [{
+            "title": {
+                "en": "Drop us a line",
+                "es": "Escribenos",
+                "cat": "Escriu-nos"
+            },
+            "link": "mailto:paularrea12@gmail.com",
+            "text_link" : "paularrea12@gmail.com"
+        },
+        {
+            "title": {
+                "en": "Call us",
+                "es": "Llámanos",
+                "cat": "Truca'ns"
+            },
+            "link": "tel:+34638305414",
+            "text_link" : "+34 638 305 414"
+        },
+        {
+            "title": {
+                "en": "Github",
+                "es": "Github",
+                "cat": "Github"
+            },
+            "link": "https://github.com/paularrea",
+            "text_link" : "github.com/paularrea"
+        }
+    ]
+}

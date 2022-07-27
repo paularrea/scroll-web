@@ -1,0 +1,54 @@
+.container{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    .header{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        color: tomato;
+        z-index: 999;
+        mix-blend-mode: difference;
+    }
+    .logo{
+        padding: 10px;
+        a{
+            color: tomato;
+        }
+    }
+    .nav{
+        background: rgb(16, 16, 16);
+        max-width: 100%;
+        min-height: 50%;
+        position: fixed;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: -51%;
+        transition: top .7s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .tab{
+            white-space: nowrap;
+            cursor: pointer;
+            text-align: center;
+            color: whitesmoke;
+            width: 0;
+            overflow: hidden;
+            transition-property: width;
+            transition-duration: 1.5s;
+            transition-delay: .5s;
+            transition-timing-function: ease-in;
+            font-size: 32px;
+            margin-bottom: 1rem;
+            &:hover{
+                color: tomato;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,45 @@
+{
+    "section_title": {
+        "en": "What we do",
+        "es": "Que hacemos",
+        "cat": "Què fem"
+    },
+    "horizontal_scroll": [{
+            "text": {
+                "en": "Design",
+                "es": "Diseño",
+                "cat": "Disseny"
+            },
+            "start_position": -50,
+            "end_position": 50
+        },
+        {
+            "text": {
+                "en": "UX",
+                "es": "UX",
+                "cat": "UX"
+            },
+            "start_position": 50,
+            "end_position": -50
+        },
+        {
+            "text": {
+                "en": "Development",
+                "es": "Desarrollo",
+                "cat": "Desenvolupament"
+            },
+            "start_position": -70,
+            "end_position": 70
+
+        },
+        {
+            "text": {
+                "en": "Web/App",
+                "es": "Web/App",
+                "cat": "Web/App"
+            },
+            "start_position": 70,
+            "end_position": -70
+        }
+    ]
+}

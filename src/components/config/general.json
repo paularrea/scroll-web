@@ -1,0 +1,17 @@
+{
+    "client": {
+        "en": "Client",
+        "es": "Cliente",
+        "cat": "Client"
+    },
+    "service": {
+        "en": "Service",
+        "es": "Servicio",
+        "cat": "Servei"
+    },
+    "website": {
+        "en": "Website",
+        "es": "Web",
+        "cat": "Web"
+    }
+}

@@ -1,0 +1,26 @@
+.language_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100px;
+    margin: 0 auto;
+    div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button{
+            background-color: transparent;
+            border: none;
+            color: gray;
+            cursor: pointer;
+            &:hover{
+                color: white;
+            }
+            &:focus{
+                color: white;
+            }
+        }  
+    }
+}
+
+
