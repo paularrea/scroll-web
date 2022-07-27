@@ -1,16 +1,18 @@
 import React from "react";
 import Layout from "../layout/layout";
+import AfterCloud from "../scroll/Intro/AfterCloud";
+import BeforeCloud from "../scroll/Intro/BeforeCloud";
 import About from "./About";
 import Contact from "./Contact";
-import Home from "./Home";
 import Work from "./Work";
 
 const Index = () => {
   return (
     <Layout>
-      <Home />
+      <BeforeCloud/>
       <About />
       <Work />
+      <AfterCloud />
       <Contact />
     </Layout>
   );

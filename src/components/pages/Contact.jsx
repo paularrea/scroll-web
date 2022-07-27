@@ -22,6 +22,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.container}>
+      <br />
       <SectionTitle title={JSON.section_title[locale]} />
       <section className={styles.contact_section}>
         <div className={styles.text}>

@@ -26,12 +26,17 @@
         justify-content: center;
         .text{
             text-align: center;
-            width: 100%;
+            width: 80%;
             max-width: 1000px;
+            h3{
+                margin: 0;
+            }
             .flex{
+                margin-bottom: 1rem;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                flex-direction: column;
                 p{
                     margin-right: 1rem;
                     color: tomato;
@@ -64,6 +69,12 @@
             flex-direction: row;
             h4{
             white-space: pre;
+            }
+            .text{
+                .flex{
+                    margin-bottom: 0rem;
+                    flex-direction: row;
+                }
             }
         }
     }

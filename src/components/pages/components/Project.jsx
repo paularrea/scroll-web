@@ -10,7 +10,7 @@ import { Parallax } from "react-scroll-parallax";
 const Project = ({ currentLocale, handleChange }) => {
   const { id } = useParams();
   const { locale } = useIntl();
-  const project = JSON.latest_projects.find((item) => item.id == id);
+  const project = JSON.latest_projects.find((item) => item.id === id);
 
   useEffect(() => {
     window.scrollTo({
@@ -24,8 +24,8 @@ const Project = ({ currentLocale, handleChange }) => {
       {project ? (
         <Layout>
           <div className={styles.container}>
-          <Parallax scale={[0.7, 1]} translateX={[-10, 10]}>
-            <div className={styles.img_container}></div>
+            <Parallax scale={[0.7, 1]} translateX={[-10, 10]}>
+              <div className={styles.img_container}></div>
             </Parallax>
             <Parallax scale={[0.7, 1]} translateY={[20, -20]}>
               <div className={styles.text_container}>
