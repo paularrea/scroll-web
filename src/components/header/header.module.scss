@@ -8,13 +8,16 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        color: tomato;
+        color: black;
         z-index: 9999999;
+        margin: 0 1rem;
     }
     .logo{
         padding: 10px;
         a{
-            color: tomato;
+            font-weight: 700;
+            color: black;
+            letter-spacing: 3px;
         }
     }
     .nav{

@@ -4,10 +4,15 @@ import styles from "./scroll.module.scss";
 import background from "../../../images/background.jpg";
 import { ReactComponent as Cloud1 } from "../../../images/cloud_1.svg";
 import { ReactComponent as Rocket } from "../../../images/rocket.svg";
+import JSON from "../../config/general.json";
+import CloudTitle from "../CloudTitle";
+import { useIntl } from "react-intl";
 
 const BeforeCloud = () => {
+  const { locale } = useIntl();
   return (
     <div id="home" className={styles.animation_container}>
+      <CloudTitle text={JSON.cloud_text_1[locale]} />
       <div className={styles.wrapper}>
         <Parallax translateY={[50, -50]} className={styles.rocket}>
           <Rocket />

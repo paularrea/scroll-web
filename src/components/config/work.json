@@ -16,8 +16,8 @@
             },
             "website": "dosnomad.com",
             "gallery": [],
-            "start_position": -100,
-            "end_position": 70,
+            "start_position": -50,
+            "end_position": 20,
             "title_position": "left"
         },
         {
@@ -32,8 +32,8 @@
             },
             "website": "bacanastudio.com",
             "gallery": [],
-            "start_position": 70,
-            "end_position": -100,
+            "start_position": 20,
+            "end_position": -50,
             "title_position": "right"
         },
         {
@@ -48,8 +48,8 @@
             },
             "website": "kolyy.com",
             "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_2.jpg?alt=media&token=9058b526-acf0-4108-a19c-68d5ee7aa0d1", "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_3.jpg?alt=media&token=1a2041c4-c5ee-4b3a-ab94-763d5dbaa652"],
-            "start_position": -100,
-            "end_position": 70,
+            "start_position": -50,
+            "end_position": 20,
             "title_position": "left"
         },
         {
@@ -64,8 +64,8 @@
             },
             "website": "victoryswitzerland.com",
             "gallery": [],
-            "start_position": 70,
-            "end_position": -100,
+            "start_position": 20,
+            "end_position": -50,
             "title_position": "right"
         }
     ]

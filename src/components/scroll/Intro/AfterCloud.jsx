@@ -4,11 +4,16 @@ import styles from "./scroll.module.scss";
 import background from "../../../images/background.jpg";
 import { ReactComponent as Cloud1 } from "../../../images/cloud_1.svg";
 import { ReactComponent as Cloud2 } from "../../../images/cloud_2.svg";
-
+import JSON from "../../config/general.json";
+import CloudTitle from "../CloudTitle";
+import { useIntl } from "react-intl";
 
 const AfterCloud = () => {
+  const { locale } = useIntl();
+
   return (
     <div className={styles.animation_container}>
+      <CloudTitle text={JSON.cloud_text_2[locale]} />
       <div className={styles.wrapper}>
       <div className={styles.cloud_2}>
           <Cloud2 />

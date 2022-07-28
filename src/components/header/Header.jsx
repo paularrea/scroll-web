@@ -11,7 +11,7 @@ const Header = ({ handleChange }) => {
     <div className={styles.container}>
       <header className={styles.header}>
         <div className={styles.logo}>
-          <Link to="/">P</Link>
+          <Link to="/">PAU LARREA</Link>
         </div>
         <div className={styles.burger}>
           <Hamburger

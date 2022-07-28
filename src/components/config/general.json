@@ -1,4 +1,14 @@
 {
+    "cloud_text_1":{
+        "en": "What if...",
+        "es": "Que pasaria si...",
+        "cat": "Què pasaria si..."
+    },
+    "cloud_text_2":{
+        "en": "Well... stop dreaming and...",
+        "es": "Bueno... deja ya de soñar y...",
+        "cat": "Bé... deixa ja de somiar i..."
+    },
     "client": {
         "en": "Client",
         "es": "Cliente",
