@@ -28,7 +28,7 @@ const Work = () => {
       {JSON.latest_projects.map((project, i) => (
         <Link key={i} className={styles.card} to={`/work/${project.id}`}>
           <MediaQuery maxWidth={819}>
-            <div className={styles.img_container}></div>
+            <div className={styles.img_container}><img src={project.img} alt={project.title} /></div>
             <h3 style={{ textAlign: project.title_position }}>
               {project.title}
             </h3>
@@ -36,9 +36,9 @@ const Work = () => {
           <MediaQuery minWidth={820}>
             <Parallax
               translateX={[project.start_position, project.end_position]}
-              opacity={[0, 1]}
+              // opacity={[0, 1]}
             >
-              <div className={styles.img_container}></div>
+              <div className={styles.img_container}><img src={project.img} alt={project.title} /></div>
             </Parallax>
             <Parallax
               translateX={[project.start_position, project.end_position]}

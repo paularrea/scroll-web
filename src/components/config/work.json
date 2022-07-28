@@ -7,7 +7,7 @@
     "latest_projects": [{
             "title": "Dos Nomad",
             "client": "Dos Nomad",
-            "img": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FDOSNOMAD_1.jpg?alt=media&token=10564873-07f8-4255-801e-1866d4965235",
             "id": "dos-nomad",
             "service": {
                 "en": "Art direction, branding, website design & development",
@@ -23,7 +23,7 @@
         {
             "title": "Bacana Studio",
             "client": "Bacana Studio",
-            "img": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FBACANA_1.jpg?alt=media&token=6cc78259-2037-4ae2-bf64-92da1034e889",
             "id": "bacana-studio",
             "service": {
                 "en": "Website design & development",
@@ -39,7 +39,7 @@
         {
             "title": "Kolyy",
             "client": "Petki labs",
-            "img": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_1.jpg?alt=media&token=d410a8d1-0dbd-407e-acfd-67d7c19ed347",
             "id": "kolyy",
             "service": {
                 "en": "Website development",
@@ -47,7 +47,7 @@
                 "cat": "Desenvolupament de la pàgina web"
             },
             "website": "kolyy.com",
-            "gallery": [],
+            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_2.jpg?alt=media&token=9058b526-acf0-4108-a19c-68d5ee7aa0d1", "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_3.jpg?alt=media&token=1a2041c4-c5ee-4b3a-ab94-763d5dbaa652"],
             "start_position": -100,
             "end_position": 70,
             "title_position": "left"
@@ -55,7 +55,7 @@
         {
             "title": "Victory Switzerland",
             "client": "Victory Switzerland",
-            "img": "",
+            "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FVS_1.jpg?alt=media&token=3d1495a0-41a2-4b0b-9e30-43f5877822ed",
             "id": "victory-switzerland",
             "service": {
                 "en": "Website development",

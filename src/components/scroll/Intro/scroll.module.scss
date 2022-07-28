@@ -1,0 +1,89 @@
+.animation_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
+    top: -4rem;
+    overflow: hidden;
+    position: relative;
+    .wrapper {
+        z-index: 9;
+        .rocket{
+            position: absolute; 
+            animation: MoveUpDown 1.5s linear infinite;
+            right: 10.8%; 
+            width: 25%;
+            height: 100%;
+            z-index: 3;
+            max-width: 150px;
+            svg{
+                width: 100%;
+                height: 100%;
+            }   
+        }
+        .background{
+            position: absolute; 
+            left: 0; 
+            right: 0; 
+            top: 0;
+            margin-left: auto; 
+            margin-right: auto; 
+            width: 100%;
+            height: 200%;
+            z-index: 1;
+            object-fit: cover;
+            img{
+                width: 200%;
+            }   
+        }
+        .cloud_1{
+            position: absolute; 
+            right: 0; 
+            bottom: -1rem;
+            width: 100%;
+            z-index: 2;
+            svg{
+                width: 100%;
+                height: 100%;
+            }  
+        }
+        .cloud_2{
+            position: absolute; 
+            right: 0; 
+            top: 0;
+            width: 100%;
+            z-index: 2;
+            svg{
+                width: 100%;
+                height: 100%;
+            }  
+        }
+      }
+  }
+  
+
+@media (min-width: 820px) {
+    .animation_container {
+        height: 90vh;
+        .wrapper {
+            z-index: 9;
+            .rocket{
+                bottom: -5rem;
+            }
+            .background{
+                img{
+                    width: 100%;
+                }   
+            }
+          }
+      }
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: -4rem;
+    }
+    50% {
+      bottom: -5rem;
+    }
+  }
