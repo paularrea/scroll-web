@@ -6,7 +6,6 @@ const CloudTitle = ({ text, position }) => {
   return (
     <Parallax
       className={styles.text}
-      style={{ textAlign: position }}
       opacity={[1, 0.8]}
     >
       <h1>{text}</h1>

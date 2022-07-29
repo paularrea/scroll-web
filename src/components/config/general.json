@@ -1,13 +1,13 @@
 {
     "cloud_text_1":{
-        "en": "Hello! My name is Pau and I am in your dreams.\nImagine all you could do just if...",
-        "es": "¡Hola! Mi nombre Pau y estoy en tus sueños.\nImagina todo lo que podrías hacer si...",
-        "cat": "Hola! Sóc en Pau i estic en els teus somnis.\nImagina tot el que podries fer si..."
+        "en": "Ready to launch with me?",
+        "es": "¿List@ para despegar conmigo?",
+        "cat": "A punt per enlairar-te amb mi?"
     },
     "cloud_text_2":{
-        "en": "Well... Stop dreaming about building your website or project and do it now!",
-        "es": "Bueno... ¡Deja de soñar con construir tu web o proyecto y hazlo ahora!.",
-        "cat": "Bé... Deixa de somiar amb construir la teva web o projecte i fes-ho ara!"
+        "en": "",
+        "es": "",
+        "cat": ""
     },
     "client": {
         "en": "Client",

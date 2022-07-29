@@ -4,16 +4,4 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    h1{
-        font-size: 38px;
-        font-weight: 700;
-    }
-}
-
-@media (min-width: 820px) {
-    .container{
-        h1{
-            font-size: 92px;
-        }
-    }
 }
