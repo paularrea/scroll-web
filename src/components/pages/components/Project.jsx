@@ -26,7 +26,9 @@ const Project = ({ currentLocale, handleChange }) => {
         <Layout>
           <div className={styles.container}>
             <MediaQuery maxWidth={819}>
-              <div className={styles.img_container}><img src={project.img} alt={project.title} /></div>
+              <div className={styles.img_container}>
+                <img src={project.img} alt={project.title} />
+              </div>
               <div className={styles.text_container}>
                 <h1>{project.title}</h1>
                 <section>
@@ -47,7 +49,9 @@ const Project = ({ currentLocale, handleChange }) => {
             </MediaQuery>
             <MediaQuery minWidth={820}>
               <Parallax scale={[0.7, 1]} translateX={[-10, 0]}>
-                <div className={styles.img_container}><img src={project.img} alt={project.title} /></div>
+                <div className={styles.img_container}>
+                  <img src={project.img} alt={project.title} />
+                </div>
               </Parallax>
               <Parallax scale={[0.7, 1]} translateY={[20, -20]}>
                 <div className={styles.text_container}>
@@ -69,9 +73,19 @@ const Project = ({ currentLocale, handleChange }) => {
                 </div>
               </Parallax>
             </MediaQuery>
-            <div className={styles.gallery_container}>
-            {project.gallery.map((img, i) => <div key={i}><img src={img} alt={project.title} /></div>)}
-            </div>
+            <a
+              href={`https://${project.website}`}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <div className={styles.gallery_container}>
+                {project.gallery.map((img, i) => (
+                  <div key={i}>
+                    <img src={img} alt={project.title} />
+                  </div>
+                ))}
+              </div>
+            </a>
           </div>
         </Layout>
       ) : (
