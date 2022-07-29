@@ -1,13 +1,15 @@
 .animation_container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 65vh;
     top: -4rem;
     overflow: hidden;
     position: relative;
     .text{
-        z-index: 999;
+        margin: 1rem;
+        z-index: 10;
+        letter-spacing: 2px;
     }
     .wrapper {
         z-index: 9;
@@ -53,7 +55,7 @@
         .cloud_2{
             position: absolute; 
             right: 0; 
-            top: 0;
+            top: -.5rem;
             width: 100%;
             z-index: 2;
             svg{

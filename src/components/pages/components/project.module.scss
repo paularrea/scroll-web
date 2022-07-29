@@ -18,7 +18,7 @@
             margin: 2rem 0 .5rem 0;
         }
         p{
-            max-width: 90vw;
+            max-width: 400px;
         }
         }
         a{
@@ -37,24 +37,23 @@
         overflow: hidden;
         background-color: whitesmoke;
         text-align: center;
-        object-fit: cover;
         img{
-            height: 100%;
+            object-fit: cover;
+            width: 100%;
         }
     }
     .gallery_container{
-        margin: 2rem auto;
+        margin: 2rem 1rem;
         >div{
             margin: 0 auto;
             margin-top: 1rem;
             width: 100%;
-            max-width: 800px;
             overflow: hidden;
             min-height: 300px;
+            object-fit: cover;
             img{
-                object-fit: cover;
-                width: 100%;
-                min-height: 300px;
+                object-position: -250px;
+                width: 300%;
             }
         }
     }
@@ -63,7 +62,7 @@
 @media (min-width: 820px) {
     .container{
         .text_container{        
-
+            min-height: 700px;
             h1{
                 margin-top: 0;
                 font-size: 8vw;
@@ -79,9 +78,12 @@
             height: 600px;
         }
         .gallery_container{
-            margin-top: 18rem;
+            margin: 0rem auto;
             >div{
                 margin-top: 3rem;
+                img{
+                    width: 100%;
+                }
             }
         }
     }

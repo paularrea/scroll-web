@@ -12,7 +12,7 @@ const BeforeCloud = () => {
   const { locale } = useIntl();
   return (
     <div id="home" className={styles.animation_container}>
-      <CloudTitle text={JSON.cloud_text_1[locale]} />
+      <CloudTitle position='left' text={JSON.cloud_text_1[locale]} />
       <div className={styles.wrapper}>
         <Parallax translateY={[50, -50]} className={styles.rocket}>
           <Rocket />

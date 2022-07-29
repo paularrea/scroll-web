@@ -13,7 +13,7 @@ const AfterCloud = () => {
 
   return (
     <div className={styles.animation_container}>
-      <CloudTitle text={JSON.cloud_text_2[locale]} />
+      <CloudTitle position='center' text={JSON.cloud_text_2[locale]} />
       <div className={styles.wrapper}>
       <div className={styles.cloud_2}>
           <Cloud2 />

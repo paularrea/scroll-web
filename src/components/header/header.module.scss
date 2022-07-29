@@ -13,12 +13,15 @@
         margin: 0 1rem;
     }
     .logo{
-        padding: 10px;
         a{
             font-weight: 700;
             color: black;
             letter-spacing: 3px;
         }
+    }
+    .burger{
+        position: relative;
+        right: -13px;
     }
     .nav{
         z-index: 999999;

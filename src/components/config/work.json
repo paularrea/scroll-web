@@ -15,7 +15,7 @@
                 "cat": "Direcció d'art, branding, disseny i desenvolupament de la pàgina web"
             },
             "website": "dosnomad.com",
-            "gallery": [],
+            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FDOSNOMAD_2.jpg?alt=media&token=17c765fc-3e15-4e46-ad76-69bbc7cf0b2f"],
             "start_position": -50,
             "end_position": 20,
             "title_position": "left"
@@ -31,7 +31,7 @@
                 "cat": "Disseny i desenvolupament de la pàgina web"
             },
             "website": "bacanastudio.com",
-            "gallery": [],
+            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FBACANA_2.jpg?alt=media&token=012a8da6-1ccb-453a-89e0-c363d7de7360"],
             "start_position": 20,
             "end_position": -50,
             "title_position": "right"
@@ -47,7 +47,7 @@
                 "cat": "Desenvolupament de la pàgina web"
             },
             "website": "kolyy.com",
-            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_2.jpg?alt=media&token=9058b526-acf0-4108-a19c-68d5ee7aa0d1", "https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_3.jpg?alt=media&token=1a2041c4-c5ee-4b3a-ab94-763d5dbaa652"],
+            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FKOLYY_2.jpg?alt=media&token=9058b526-acf0-4108-a19c-68d5ee7aa0d1"],
             "start_position": -50,
             "end_position": 20,
             "title_position": "left"
@@ -63,7 +63,7 @@
                 "cat": "Desenvolupament de la pàgina web"
             },
             "website": "victoryswitzerland.com",
-            "gallery": [],
+            "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FVS_2.jpg?alt=media&token=1da9db8e-8b05-4a36-9a24-25605834dbb9"],
             "start_position": 20,
             "end_position": -50,
             "title_position": "right"

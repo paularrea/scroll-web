@@ -34,12 +34,21 @@
         },
         {
             "text": {
-                "en": "Web/App",
-                "es": "Web/App",
-                "cat": "Web/App"
+                "en": "Web",
+                "es": "Web",
+                "cat": "Web"
             },
             "start_position": 70,
             "end_position": -70
+        },
+        {
+            "text": {
+                "en": "App",
+                "es": "App",
+                "cat": "App"
+            },
+            "start_position": -70,
+            "end_position": 70
         }
     ]
 }

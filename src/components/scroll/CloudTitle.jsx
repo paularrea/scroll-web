@@ -2,9 +2,13 @@ import React from "react";
 import styles from "./Intro/scroll.module.scss";
 import { Parallax } from "react-scroll-parallax";
 
-const CloudTitle = ({ text }) => {
+const CloudTitle = ({ text, position }) => {
   return (
-    <Parallax className={styles.text} opacity={[1, .5]} scale={[1, .5]}>
+    <Parallax
+      className={styles.text}
+      style={{ textAlign: position }}
+      opacity={[1, 0.8]}
+    >
       <h1>{text}</h1>
     </Parallax>
   );
