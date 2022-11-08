@@ -1,32 +1,23 @@
-import React, { Suspense, useLayoutEffect, useEffect, useRef } from "react";
+import React, { Suspense, useEffect, useRef } from "react";
 import { useIntl } from "react-intl";
 import { useLocation } from "react-router-dom";
 import JSON from "../config/about.json";
-import { DragElement } from "../animations/DragElement";
-import { FadeInOnScroll } from "../animations/FadeInOnScroll";
 import styles from "../../sass/about.module.scss";
-import { Canvas, UseFrame } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera, useGLTF } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls } from "@react-three/drei";
 import { Avatar2 } from "../animations/Avatar_2";
 import { InertiaScroll } from "../animations/InertiaScroll";
+import { FadeInOnScroll } from "../animations/FadeInOnScroll";
 
 const About = () => {
   const scrollRef = useRef();
-  const dragInstanceOne = useRef(null);
-  const dragInstanceTwo = useRef(null);
-  const dragTargetOne = useRef(null);
-  const dragTargetTwo = useRef(null);
+  const fadeRef = useRef();
   const { locale } = useIntl();
   const location = useLocation();
 
-  useLayoutEffect(() => {
-    // FadeInOnScroll(scrollRef);
-    // DragElement(dragInstanceOne, dragTargetOne);
-    // DragElement(dragInstanceTwo, dragTargetTwo);
-  }, []);
-
   useEffect(() => {
-    InertiaScroll(scrollRef)
+    InertiaScroll(scrollRef);
+    FadeInOnScroll(fadeRef);
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
@@ -38,22 +29,19 @@ const About = () => {
   }, [location]);
 
   return (
-    <section id="about"  className={styles.container}>
+    <section id="about" className={styles.container}>
       <div ref={scrollRef} className={styles.text_box}>
-        <h4>
-          MY NAME IS PAU LARREA, I AM A FRONT-END DEVELOPER WHO LOVES COMBINING
-          FUNCTIONALITY AND NAVIGATION WITH BEAUTIFUL AESTHETICS.
-        </h4>
+        <h4>{JSON.text[locale]}</h4>
         <div className={styles.sub_text_box}>
-          <h5>THINGS I CAN HELP YOU WITH.</h5>
+          <h5> {JSON.title_tech[locale]}</h5>
           <p>DESIGN / UX&UI / FRONTEND DEVELOPMENT / WEB</p>
         </div>
       </div>
-      <div className={styles.imgs_box}>
+      <div  ref={fadeRef} className={styles.imgs_box}>
         <Canvas
           shadows
           // ref={dragTargetOne}
-          camera={{ fov: 32, position: [2, 3, 1] }}
+          camera={{ fov: 50, position: [2, -1, 1] }}
           className={styles.canvas}
         >
           <Suspense fallback={null}>

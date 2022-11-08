@@ -1,5 +1,4 @@
 import React, { useLayoutEffect, useRef, useEffect } from "react";
-import { FadeInOnScroll } from "../animations/FadeInOnScroll";
 import styles from "../../sass/projects.module.scss";
 import JSON from "../config/work.json";
 import { useIntl } from "react-intl";

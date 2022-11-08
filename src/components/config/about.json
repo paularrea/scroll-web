@@ -4,51 +4,16 @@
         "es": "Sobre mi",
         "cat": "Sobre mi"
     },
-    "horizontal_scroll": [{
-            "text": {
-                "en": "Design",
-                "es": "Diseño",
-                "cat": "Disseny"
-            },
-            "start_position": -50,
-            "end_position": 50
-        },
-        {
-            "text": {
-                "en": "UX",
-                "es": "UX",
-                "cat": "UX"
-            },
-            "start_position": 50,
-            "end_position": -50
-        },
-        {
-            "text": {
-                "en": "Development",
-                "es": "Desarrollo",
-                "cat": "Desenvolupament"
-            },
-            "start_position": -70,
-            "end_position": 70
+    "text" : {
+        "en": "MY NAME IS PAU LARREA, I AM A FRONT-END DEVELOPER WHO LOVES COMBINING FUNCTIONALITY AND NAVIGATION WITH BEAUTIFUL AESTHETICS.",
+        "es": "MI NOMBRE ES PAU LARREA, DESARROLLADOR FRONT-END QUE COMBINA FUNCIONALIDAD Y NAVEGACIÓN SIN DEJAR DE LADO LA ESTÉTICA.",
+        "cat": "EL MEU NOM ÉS PAU LARREA, DESENVOLUPADOR FRONT-END QUE COMBINA FUNCIONALITAT I NAVEGACIÓ SENSE DEIXAR DE COSTAT L'ESTÈTICA."
+    },
+    "title_tech" : {
+        "en": "THINGS I CAN HELP YOU WITH.",
+        "es": "EN QUÉ COSAS PUEDO AYUDARTE.",
+        "cat": "EN QUINES COSES PUC AJUDAR-TE."
+    }
 
-        },
-        {
-            "text": {
-                "en": "Web",
-                "es": "Web",
-                "cat": "Web"
-            },
-            "start_position": 70,
-            "end_position": -70
-        },
-        {
-            "text": {
-                "en": "App",
-                "es": "App",
-                "cat": "App"
-            },
-            "start_position": -70,
-            "end_position": 70
-        }
-    ]
+    
 }
