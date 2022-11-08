@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { IntlProvider } from "react-intl";
-import { ParallaxProvider } from "react-scroll-parallax";
 import "./sass/App.scss";
 import AppRoutes from "./routes/Routes";
 
@@ -23,9 +22,7 @@ function App() {
 
   return (
     <IntlProvider locale={currentLocale} defaultLocale={locale}>
-      <ParallaxProvider>
         <AppRoutes currentLocale={currentLocale} handleChange={handleChange} />
-      </ParallaxProvider>
     </IntlProvider>
   );
 }

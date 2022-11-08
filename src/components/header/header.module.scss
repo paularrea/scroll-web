@@ -1,70 +1,51 @@
 .container{
-    position: sticky;
+    position: relative;
     top: 0;
     z-index: 99;
     .header{
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        color: black;
+        position: fixed;
+        right: 4vw;
+        top: 1rem;
+        color: white;
         z-index: 9999999;
-        margin: 0 1rem;
-    }
-    .logo{
-        a{
-            font-weight: 700;
-            color: black;
-            letter-spacing: 3px;
-        }
-    }
-    .burger{
-        position: relative;
-        right: -13px;
+
     }
     .nav{
         z-index: 999999;
-        background: white;
-        max-width: 100%;
+        border-radius: 0 0 0 100%;
+        background: radial-gradient(circle at top right, rgba(33, 25, 96, 0.7), #8C2367);
+        backdrop-filter: blur(5px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 30px;
+        width: 450px;
+        max-width: 90vw;
         min-height: 350px;
         position: fixed;
-        left: 0;
         right: 0;
         margin: 0 auto;
+        padding: 5rem 0;
         top: -80vh;
-        transition: top .7s ease;
+        transition: top 1s ease;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-
+        
         .tab{
             white-space: nowrap;
+            text-align: right;
             cursor: pointer;
-            text-align: center;
-            color: black;
-            width: 0;
+            color: rgba(245, 245, 245, 0.7);
             overflow: hidden;
+            padding-right: 5vw;
             transition-property: opacity;
             transition-duration: 1s;
             transition-timing-function: ease-in;
-            font-size: 24px;
             margin-bottom: 1rem;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
             &:hover{
-                color: tomato;
+                color: white;
             }
-        }
-        .cloud{
-            position: absolute; 
-            right: 0; 
-            bottom: -280px;
-            width: 100%;
-            z-index: -1;
-            svg{
-                width: 100%;
-                height: 100%;
-            }  
         }
     }
 }

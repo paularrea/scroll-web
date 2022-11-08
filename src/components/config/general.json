@@ -1,14 +1,4 @@
 {
-    "cloud_text_1":{
-        "en": "Ready to launch with me?",
-        "es": "¿Quieres despegar conmigo?",
-        "cat": "Vols enlairar-te amb mi?"
-    },
-    "cloud_text_2":{
-        "en": "",
-        "es": "",
-        "cat": ""
-    },
     "client": {
         "en": "Client",
         "es": "Cliente",

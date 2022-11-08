@@ -1,23 +1,18 @@
 .language_container{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100px;
-    margin: 0 auto;
+    width: 100%;
+    justify-content: flex-end;
     div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
         button{
             background-color: transparent;
             border: none;
-            color: gray;
+            color: rgba(245, 245, 245, 0.533);
             cursor: pointer;
             &:hover{
-                color: black;
+                color: white;
             }
             &:focus{
-                color: black;
+                color: white;
             }
         }  
     }

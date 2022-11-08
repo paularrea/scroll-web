@@ -1,15 +1,28 @@
-import React, { useEffect } from "react";
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import React, { Suspense, useEffect, useRef } from "react";
 import { useIntl } from "react-intl";
 import { useLocation } from "react-router-dom";
-import styles from "../../sass/pages.module.scss";
+import styles from "../../sass/contact.module.scss";
+import { AppearScroll } from "../animations/AppearScroll";
+import { FadeInOnScroll } from "../animations/FadeInOnScroll";
+import { Gmail } from "../animations/Gmail";
+import { InertiaScroll } from "../animations/InertiaScroll";
+import { Linkedin } from "../animations/Linkedin";
+import { Whatsapp } from "../animations/Whatsapp";
 import JSON from "../config/contact.json";
-import SectionTitle from "../scroll/SectionTitle";
 
 const Contact = () => {
   const { locale } = useIntl();
   const location = useLocation();
+  const scrollRef = useRef();
+  const circleRef = useRef();
+  const fade = useRef();
 
   useEffect(() => {
+    AppearScroll(circleRef);
+    InertiaScroll(scrollRef);
+    FadeInOnScroll(fade)
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
@@ -22,25 +35,46 @@ const Contact = () => {
 
   return (
     <div id="contact" className={styles.container}>
-      <SectionTitle title={JSON.section_title[locale]} />
-      <section className={styles.contact_section}>
+      <section ref={scrollRef} className={styles.contact_section}>
         <div className={styles.text}>
-          <h3>{JSON.title[locale]}</h3>
+          <h2>{JSON.title[locale]}</h2>
           <br />
           <h4> {JSON.sub_title[locale]}</h4>
-          <br />
-          <div>
-            {JSON.contact_links.map((item) => (
-              <div className={styles.flex}>
-                <p>{item.title[locale]}</p>
-                <a target="_blank" rel="noreferrer" href={item.link}>
-                  {item.text_link}
-                </a>
-              </div>
-            ))}
-          </div>
+        </div>
+        <div ref={fade} className={styles.contact_flex}>
+          {JSON.contact_links.map((item) => (
+            <a
+              className={styles.flex}
+              target="_blank"
+              rel="noreferrer"
+              href={item.link}
+            >
+              <Canvas
+                shadows
+                camera={{ fov: 5, position: [2, -1, 1] }}
+                className={styles.canvas}
+              >
+                <Suspense fallback={null}>
+                  <ambientLight />
+                  <directionalLight intensity={2} position={[0, 0, 10]} />
+                  {item.icon === "gmail" && <Gmail />}
+                  {item.icon === "linkedin" && <Linkedin />}
+                  {item.icon === "whatsapp" && <Whatsapp />}
+                  <OrbitControls
+                    enablePan={true}
+                    enableZoom={false}
+                    enableRotate={true}
+                  />
+                </Suspense>
+              </Canvas>
+              <section className={styles.text_container}>
+                <h5>{item.title[locale]}</h5>
+              </section>
+            </a>
+          ))}
         </div>
       </section>
+      {/* <div ref={circleRef} className={styles.circle}></div> */}
     </div>
   );
 };

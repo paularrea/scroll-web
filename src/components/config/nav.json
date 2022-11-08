@@ -9,17 +9,17 @@
         },
         {
             "title": {
-                "en": "What we do",
-                "es": "Que hacemos",
-                "cat": "Què fem"
+                "en": "About",
+                "es": "Sobre mi",
+                "cat": "Sobre mi"
             },
             "id": "about"
         },
         {
             "title": {
-                "en": "Our work",
-                "es": "Últimos proyectos",
-                "cat": "Darrers projectes"
+                "en": "Work",
+                "es": "Proyectos",
+                "cat": "Projectes"
             },
             "id": "work"
         },

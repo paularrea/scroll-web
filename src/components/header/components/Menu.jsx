@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import JSON from "../../config/nav.json";
 import LanguagesButtons from "../../../translations/languagesButtons";
 import { useIntl } from "react-intl";
-import { ReactComponent as Cloud2 } from "../../../images/cloud_2.svg";
 
 
 const Menu = ({ isOpen, setOpen, handleChange }) => {
@@ -27,11 +26,9 @@ const Menu = ({ isOpen, setOpen, handleChange }) => {
             activeClass="active"
             spy={true}
             smooth={true}
-            offset={-70}
             duration={1000}
             onClick={() => setOpen(false)}
             className={styles.tab}
-            style={{ width: isOpen ? "60%" : 0, opacity: isOpen ? 1 : .5 }}
           >
             {item.title[locale]}
           </AnchorLink>
@@ -41,7 +38,6 @@ const Menu = ({ isOpen, setOpen, handleChange }) => {
             to={`/#${item.id}`}
             className={styles.tab}
             onClick={() => setOpen(false)}
-            style={{ width: isOpen ? "60%" : 0, opacity: isOpen ? 1 : .5 }}
           >
             {item.title[locale]}
           </Link>
@@ -50,11 +46,9 @@ const Menu = ({ isOpen, setOpen, handleChange }) => {
       <br />
       <LanguagesButtons
         className={styles.tab}
-        style={{ width: isOpen ? "40%" : 0, opacity: isOpen ? 1 : .5 }}
         handleChange={handleChange}
         onClick={() => setOpen(false)}
       />
-      <Cloud2 className={styles.cloud}/>
     </nav>
   );
 };
