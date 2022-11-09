@@ -42,13 +42,25 @@
                     cursor: grab;
                     }
                 }
-                .text_container{
+                a{
+                    text-decoration: underline;
                     width: 100%;
-                    text-align: left;
-                    h3{
-                         margin-bottom: 1rem;
-                    }  
+                    color: rgba(245, 245, 245, 0.7);
+                    &:hover{
+                        color: white;
+                    }
+                    .text_container{
+                        text-align: left;
+                        h5{
+                            color: rgba(245, 245, 245, 0.7);
+                            &:hover{
+                                color: white;
+                            }
+                        }  
+
+                    }
                 }
+          
             }  
         }
     }

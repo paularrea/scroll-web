@@ -22,7 +22,7 @@ const Contact = () => {
   useEffect(() => {
     AppearScroll(circleRef);
     InertiaScroll(scrollRef);
-    FadeInOnScroll(fade)
+    FadeInOnScroll(fade);
     if (location.hash) {
       let elem = document.getElementById(location.hash.slice(1));
       if (elem) {
@@ -43,12 +43,7 @@ const Contact = () => {
         </div>
         <div ref={fade} className={styles.contact_flex}>
           {JSON.contact_links.map((item) => (
-            <a
-              className={styles.flex}
-              target="_blank"
-              rel="noreferrer"
-              href={item.link}
-            >
+            <div className={styles.flex}>
               <Canvas
                 shadows
                 camera={{ fov: 5, position: [2, -1, 1] }}
@@ -56,7 +51,7 @@ const Contact = () => {
               >
                 <Suspense fallback={null}>
                   <ambientLight />
-                  <directionalLight intensity={2} position={[0, 0, 10]} />
+                  <directionalLight intensity={1} position={[0, 30, 20]} />
                   {item.icon === "gmail" && <Gmail />}
                   {item.icon === "linkedin" && <Linkedin />}
                   {item.icon === "whatsapp" && <Whatsapp />}
@@ -67,10 +62,12 @@ const Contact = () => {
                   />
                 </Suspense>
               </Canvas>
-              <section className={styles.text_container}>
-                <h5>{item.title[locale]}</h5>
-              </section>
-            </a>
+              <a target="_blank" rel="noreferrer" href={item.link}>
+                <section className={styles.text_container}>
+                  <h5>{item.title[locale]}</h5>
+                </section>
+              </a>
+            </div>
           ))}
         </div>
       </section>

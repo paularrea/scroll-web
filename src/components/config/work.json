@@ -14,7 +14,7 @@
                 "es": "Dirección de arte, branding, diseño y desarrollo de la página web",
                 "cat": "Direcció d'art, branding, disseny i desenvolupament de la pàgina web"
             },
-            "website": "dosnomad.com",
+            "website": "dosnomad.netlify.app/",
             "gallery": ["https://firebasestorage.googleapis.com/v0/b/portfolio-d5c1c.appspot.com/o/scroll%2FDOSNOMAD_2.jpg?alt=media&token=17c765fc-3e15-4e46-ad76-69bbc7cf0b2f"],
             "start_position": -50,
             "end_position": 20,

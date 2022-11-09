@@ -25,7 +25,7 @@ export const InertiaScroll = (ref) => {
         scrollTrigger: {
           scrub: 2,
           trigger: el,
-          start: "top 90%",
+          start: "top 95%",
         },
       }
     );

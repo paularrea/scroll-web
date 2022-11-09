@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
-export const FadeInOnScroll = (ref) => {
+export const FadeInOnScroll = (ref, delay) => {
   const el = ref.current;
   const container = gsap.utils.toArray(el.children);
 
@@ -14,7 +14,7 @@ export const FadeInOnScroll = (ref) => {
         yPercent: 0,
       },
       {
-        delay: 1,
+        delay: delay ? delay : 1,
         duration:2,
         yPercent: -20,
         scale: 1,
@@ -25,8 +25,8 @@ export const FadeInOnScroll = (ref) => {
         scrollTrigger: {
           scrub: 2,
           trigger: el,
-          start: "top 90%",
-          end: "top 80%"
+          start: "top 95%",
+          end: "top 90%"
         },
       }
     );
