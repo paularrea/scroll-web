@@ -44,9 +44,6 @@ const Project = ({ currentLocale, handleChange }) => {
               </div>
             </MediaQuery>
             <MediaQuery minWidth={820}>
-                <div className={styles.img_container}>
-                  <img src={project.img} alt={project.title} />
-                </div>
                 <div className={styles.text_container}>
                   <h1>{project.title}</h1>
                   <section>
