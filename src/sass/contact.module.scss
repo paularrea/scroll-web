@@ -70,14 +70,15 @@
 @media (min-width: 767px) { 
     .container{
         height: 100vh;
-        .circle{
-        }
         .contact_section{
             .contact_flex{
                 margin: 8rem 0;
                 flex-direction: row;
                 .flex{
                     flex-direction: column;
+                    h5{
+                        text-align: center;
+                    }
                     .text_container{
                         text-align: center;
                     }

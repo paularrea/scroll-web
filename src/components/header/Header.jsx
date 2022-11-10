@@ -9,7 +9,7 @@ const Header = ({ handleChange }) => {
   const fade = useRef();
 
   useEffect(() => {
-    ShowBurger(fade, 5);
+    ShowBurger(fade, 1);
   }, []);
 
   return (

@@ -10,7 +10,7 @@ export const InertiaScroll = (ref) => {
     gsap.fromTo(
       el,
       {
-        autoAlpha: 0,
+        // autoAlpha: 0,
         scale: 0.9,
         yPercent: 0,
       },
@@ -18,7 +18,7 @@ export const InertiaScroll = (ref) => {
         duration:2,
         yPercent: -40,
         scale: 1,
-        autoAlpha: 1,
+        // autoAlpha: 1,
         ease: "power2.out",
         stagger: 0.2,
         inertia: true,
