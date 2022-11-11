@@ -11,7 +11,7 @@ export function Avatar2(props) {
   });
 
   return (
-    <group ref={group} {...props} dispose={null} scale={1} position={[0, -1, 0]}>
+    <group ref={group} {...props} dispose={null} scale={1} position={[0, -.8, 0]}>
       <mesh geometry={nodes.EyeLeft.geometry} material={materials.Wolf3D_Eye} />
       <mesh
         geometry={nodes.EyeRight.geometry}

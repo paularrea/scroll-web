@@ -5,7 +5,7 @@
     padding: 2rem 0;
     .go_back{
         position: fixed;
-        z-index: 10;
+        z-index: 100;
         top: 2rem;
         left: 2rem;
         color: white;
@@ -16,7 +16,7 @@
     }
     .text_container{
         position: fixed;
-        top: -470px;
+        top: -540px;
         left: -460px;
         width: 900px;
         height: 900px;

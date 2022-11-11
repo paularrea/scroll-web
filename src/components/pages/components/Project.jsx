@@ -9,7 +9,7 @@ import { OnClick } from "../../animations/OnClick";
 import { ReactComponent as Arrow } from "../../svg/Arrow.svg";
 import Masonry from "react-masonry-css";
 import { TabToShow } from "../../animations/TabToShow";
-import { InertiaScroll } from "../../animations/InertiaScroll";
+import { FadeInOnScroll } from "../../animations/FadeInOnScroll";
 
 const breakpointColumnsObj = {
   default: 4,
@@ -18,15 +18,13 @@ const breakpointColumnsObj = {
   500: 2,
 };
 
-const ProjectInfo = () => {
+const ProjectInfo = ({ hide, setHide }) => {
   const showRef = useRef();
-  const [hide, setHide] = useState(false);
   const { id } = useParams();
   const { locale } = useIntl();
   const project = JSON.latest_projects.find((item) => item.id === id);
 
   useEffect(() => {
-    setHide(hide);
     TabToShow(showRef, hide);
   }, [hide]);
 
@@ -66,33 +64,39 @@ const ProjectInfo = () => {
   );
 };
 
-const ProjectGallery = () => {
+const ProjectGallery = ({ hide, setHide }) => {
   const { id } = useParams();
   const scrollRef = useRef();
   const project = JSON.latest_projects.find((item) => item.id === id);
-  
+
   useEffect(() => {
-    InertiaScroll(scrollRef);
+    FadeInOnScroll(scrollRef);
   }, []);
 
   return (
-    <Masonry
-      breakpointCols={breakpointColumnsObj}
-      className={styles.my_masonry_grid}
-      columnClassName={styles.my_masonry_grid_column}
-      ref={scrollRef}
-    >
-      {project.gallery.map((img, i) => (
-        <div key={i}>
-          <img src={img} alt={project.title} />
-        </div>
-      ))}
-    </Masonry>
+    <div ref={scrollRef}>
+      <Masonry
+        breakpointCols={breakpointColumnsObj}
+        className={styles.my_masonry_grid}
+        columnClassName={styles.my_masonry_grid_column}
+        ref={scrollRef}
+      >
+        {project.gallery.map((img, i) => (
+          <div key={i}>
+            <img src={img} alt={project.title} />
+          </div>
+        ))}
+      </Masonry>
+    </div>
   );
 };
 
 const Project = ({ currentLocale, handleChange }) => {
   const animateRef = useRef();
+  const [hide, setHide] = useState(false);
+  useEffect(() => {
+    setHide(hide);
+  }, [hide]);
 
   useEffect(() => {
     OnClick(animateRef);
@@ -106,12 +110,12 @@ const Project = ({ currentLocale, handleChange }) => {
     <Layout>
       <div className={styles.container}>
         <div ref={animateRef} className={styles.go_back}>
-          <Link to={`/#work`}>
+          <Link to={`/`}>
             <Arrow />
           </Link>
         </div>
-        <ProjectInfo />
-        <ProjectGallery />
+        <ProjectInfo hide={hide} setHide={setHide} />
+        <ProjectGallery hide={hide} setHide={setHide} />
       </div>
     </Layout>
   );

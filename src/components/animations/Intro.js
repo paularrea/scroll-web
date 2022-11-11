@@ -18,12 +18,12 @@ export const Intro = (ref) => {
     {
       xPercent: -100,
       opacity: 0,
-      rotate: -10,
+      // rotate: -10,
     },
     {
       delay: 1,
-      rotate: 0,
-      stagger: 0.2,
+      // rotate: 0,
+      stagger: 0.3,
       opacity: 1,
       xPercent: 0,
       ease: "power2.out",
@@ -35,12 +35,12 @@ export const Intro = (ref) => {
     {
       xPercent: 100,
       opacity: 0,
-      rotate: 10,
+      // rotate: 10,
     },
     {
       delay: 1,
-      rotate: 0,
-      stagger: 0.2,
+      // rotate: 0,
+      stagger: 0.4,
       opacity: 1,
       xPercent: 0,
       ease: "power2.out",
@@ -63,20 +63,18 @@ export const Intro = (ref) => {
   );
 
   gsap.to(el, {
-    //   scale: 0.4,
     xPercent: 0,
     yPercent: 0,
     top: "1rem",
     left: "5vw",
     position: "fixed",
-    duration: 1,
     ease: "power2.out",
     scrollTrigger: {
       trigger: el,
-      start: "3px 47%",
+      start: "0px 47%",
       end: "bottom 0",
+      scrub: 3,
       toggleActions: "play none none reverse",
-      // markers: true,
     },
   });
 };

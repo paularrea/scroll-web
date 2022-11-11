@@ -10,23 +10,19 @@ export const FadeInOnScroll = (ref, delay) => {
     gsap.fromTo(
       el,
       {
-        autoAlpha: 0,
-        yPercent: 0,
+        yPercent: 40,
       },
       {
         delay: delay ? delay : 1,
         duration:2,
-        yPercent: -20,
-        scale: 1,
-        autoAlpha: 1,
+        yPercent: 0,
         ease: "power2.out",
         stagger: 0.2,
         inertia: true,
         scrollTrigger: {
-          scrub: 2,
+          scrub: 3,
           trigger: el,
           start: "top 95%",
-          end: "top 90%"
         },
       }
     );

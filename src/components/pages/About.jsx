@@ -31,16 +31,15 @@ const About = () => {
   return (
     <section id="about" className={styles.container}>
       <div ref={scrollRef} className={styles.text_box}>
-        <h4>{JSON.text[locale]}</h4>
+        <h3>{JSON.text[locale]}</h3>
         <div className={styles.sub_text_box}>
           <h5> {JSON.title_tech[locale]}</h5>
-          <p>DESIGN / UX&UI / FRONTEND DEVELOPMENT / WEB</p>
+          <h6>DESIGN / UX&UI / FRONTEND DEVELOPMENT / WEB</h6>
         </div>
       </div>
       <div  ref={fadeRef} className={styles.imgs_box}>
         <Canvas
           shadows
-          // ref={dragTargetOne}
           camera={{ fov: 50, position: [2, -1, 1] }}
           className={styles.canvas}
         >
@@ -55,22 +54,6 @@ const About = () => {
             />
           </Suspense>
         </Canvas>
-        {/* <Canvas
-    shadows
-    camera={{ fov: 1000, position: [2, -2, 0] }}
-    className={styles.canvas}
-  >
-    <Suspense fallback={null}>
-      <ambientLight />
-      <directionalLight intensity={2} position={[0, 0, 50]} />
-      <Moon />
-      <OrbitControls
-        enablePan={true}
-        enableZoom={false}
-        enableRotate={true}
-      />
-    </Suspense>
-  </Canvas> */}
       </div>
     </section>
   );

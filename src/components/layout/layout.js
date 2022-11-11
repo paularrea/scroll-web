@@ -32,7 +32,7 @@ const Layout = ({ children }) => {
       <div className={styles.container}>
         <Header handleChange={handleChange} />
         <main className={styles.page}>{children}</main>
-        <Footer />
+        <Footer handleChange={handleChange}/>
       </div>
     </IntlProvider>
   );

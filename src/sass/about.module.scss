@@ -1,6 +1,4 @@
 .container{
-    min-height: 100vh;
-    padding-top: 10rem;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-between;
@@ -31,32 +29,10 @@
             height: 100%;
             >div{
             min-width: 50vw;
-            min-height: 90vh;
+            min-height: 700px;
             cursor: grab;
             }
         }
-        // position: relative;
-        // display: flex;
-        // img{
-        //     border-radius: 32px;
-        //     width: 350px;
-        //     transition: all 0.3s ease-out;
-        //     filter: grayscale(100%);
-        //     &:hover{
-        //         filter: grayscale(0%);
-        //        box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-        //     }
-        // }
-        // .img_1{
-        //     position: absolute;
-        //     transform: rotate(-7deg);
-        //     left: -4rem;
-        //     top: -4rem;
-            
-        // }
-        // .img_2{
-        //     z-index: 2;
-        // }
     }
 }
 
@@ -70,6 +46,13 @@
             margin-top: 0;
             h2{
                 width: 50vw;
+            }
+        }
+        .imgs_box{
+            .canvas{
+                >div{
+                min-height: 90vh;
+                }
             }
         }
     }

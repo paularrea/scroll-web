@@ -11,17 +11,17 @@ export const AppearScroll = (ref) => {
       el,
       {
         scale: 1,
-        y: 0,
+        yPercent: 0,
       },
       {
         duration:2,
-        y: 0,
-        scale: 1.5,
+        yPercent: -20,
+        scale: 1.4,
         ease: "power2.out",
         stagger: 0.2,
         inertia: true,
         scrollTrigger: {
-          scrub: 2,
+          scrub: 5,
           trigger: el,
           start: "top 90%",
         },

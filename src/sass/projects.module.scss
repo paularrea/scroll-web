@@ -4,10 +4,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh; 
-    padding-top: 8rem;
-    >li{
+    min-height: 100vh;
+    ul{
         width: 100%;
+        padding: 0;
+    }
+    li{
         list-style-type: none;
         >a{ 
             padding: 2rem 0 1rem 0;

@@ -5,14 +5,14 @@
         "cat": "Contacte"
     },
     "title": {
-        "en": "I'd love to hear from you",
-        "es": "¿Tienes alguna idea? ¡Contáctame!",
-        "cat": "Tens alguna idea? Contacta'm!"
+        "en": "Need a hand?",
+        "es": "¿Necesitas ayuda?",
+        "cat": "¿Necessites un cop de mà?"
     },
     "sub_title": {
-        "en": "Need a hand? Let's talk about your website or project.\nHere's how to reach me.",
-        "es": "¿Necesitas ayuda? Hablamos de tu web o proyecto.\nAquí tienes cómo contactar conmigo.",
-        "cat": "¿Necessites un cop de mà? Parlem de la teva web o projecte.\nAquí tens com contactar amb mi."
+        "en": "I'd love to hear from you. Let's talk about your website or project.\nHere's how to reach me.",
+        "es": "¿Tienes alguna idea? Hablamos de tu web o proyecto.\nAquí tienes cómo contactar conmigo.",
+        "cat": "Tens alguna idea? Parlem de la teva web o projecte.\nAquí tens com contactar amb mi."
     },
     "contact_links": [{
             "title": {

@@ -26,21 +26,23 @@ const Projects = () => {
   }, [location]);
 
   return (
-    <ul id="work" className={styles.container} ref={scrollRef}>
-      {JSON.latest_projects.map((project, i) => {
-        return (
-          <li key={i}>
-            <Link to={`/work/${project.id}`}>
-              <div>
-                <h3>0{i + 1}</h3>
-                <h2>{project.title}</h2>
-              </div>
-              <p>{project.service[locale]}</p>
-            </Link>
-          </li>
-        );
-      })}
-    </ul>
+    <section className={styles.container} id="work">
+      <ul ref={scrollRef}>
+        {JSON.latest_projects.map((project, i) => {
+          return (
+            <li key={i}>
+              <Link to={`/work/${project.id}`}>
+                <div>
+                  <h3>0{i + 1}</h3>
+                  <h2>{project.title}</h2>
+                </div>
+                <p>{project.service[locale]}</p>
+              </Link>
+            </li>
+          );
+        })}
+      </ul>
+    </section>
   );
 };
 

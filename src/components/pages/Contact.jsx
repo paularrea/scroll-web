@@ -37,7 +37,7 @@ const Contact = () => {
     <div id="contact" className={styles.container}>
       <section ref={scrollRef} className={styles.contact_section}>
         <div className={styles.text}>
-          <h2>{JSON.title[locale]}</h2>
+          <h3>{JSON.title[locale]}</h3>
           <br />
           <h4> {JSON.sub_title[locale]}</h4>
         </div>
@@ -71,7 +71,7 @@ const Contact = () => {
           ))}
         </div>
       </section>
-      {/* <div ref={circleRef} className={styles.circle}></div> */}
+      <div ref={circleRef} className={styles.circle}></div>
     </div>
   );
 };

@@ -1,0 +1,22 @@
+footer{
+    color: rgb(245, 245, 245, 0.7);
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+    z-index: 2;
+    >div{
+        margin-top: 1rem;
+    }
+}
+
+@media (min-width: 767px) {
+    footer{
+        flex-direction: row;
+        >div{
+            margin-top: 0rem;
+        }
+    }
+} 
