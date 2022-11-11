@@ -1,18 +1,20 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "../header.module.scss";
 import { Link as AnchorLink } from "react-scroll";
 import { Link } from "react-router-dom";
 import JSON from "../../config/nav.json";
 import LanguagesButtons from "../../../translations/languagesButtons";
 import { useIntl } from "react-intl";
-
+import { InertiaScroll } from "../../animations/InertiaScroll";
 
 const Menu = ({ isOpen, setOpen, handleChange }) => {
   const [isHomePage, setHomePage] = useState(true);
   const { locale } = useIntl();
+  const ref = useRef();
 
   useEffect(() => {
     let url = window.location.href;
+    InertiaScroll(ref);
     url.indexOf("work") > -1 && setHomePage(false);
   }, [isHomePage]);
 

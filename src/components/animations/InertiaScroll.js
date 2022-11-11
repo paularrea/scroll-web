@@ -12,10 +12,12 @@ export const InertiaScroll = (ref, delay) => {
       {
         yPercent: 40,
         scale: 0.9,
+        rotate:-2,
       },
       {
         delay: delay ? delay : 1,
         scale: 1,
+        rotate:0,
         duration:2,
         yPercent: 0,
         ease: "power2.out",
@@ -25,6 +27,7 @@ export const InertiaScroll = (ref, delay) => {
           scrub: 3,
           trigger: el,
           start: "top 95%",
+          end: "top 30%"
         },
       }
     );
