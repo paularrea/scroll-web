@@ -16,7 +16,7 @@
     }
     .text_container{
         position: fixed;
-        top: -540px;
+        top: -500px;
         left: -460px;
         width: 900px;
         height: 900px;
@@ -86,12 +86,12 @@
     padding-top: 70px;
   }
   .my_masonry_grid_column {
-    padding: 0 2vw;
+    padding: 0 1vw;
     background-clip: padding-box;
   }
   /* Style your items */
   .my_masonry_grid_column > div {
-    margin-bottom: 2vw;
+    margin-bottom: 1vw;
     border-radius: 8px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 30px;
   }

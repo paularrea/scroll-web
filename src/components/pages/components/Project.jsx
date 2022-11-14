@@ -66,20 +66,14 @@ const ProjectInfo = ({ hide, setHide }) => {
 
 const ProjectGallery = ({ hide, setHide }) => {
   const { id } = useParams();
-  const scrollRef = useRef();
   const project = JSON.latest_projects.find((item) => item.id === id);
 
-  useEffect(() => {
-    FadeInOnScroll(scrollRef);
-  }, []);
-
   return (
-    <div ref={scrollRef}>
+    <div>
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className={styles.my_masonry_grid}
         columnClassName={styles.my_masonry_grid_column}
-        ref={scrollRef}
       >
         {project.gallery.map((img, i) => (
           <div key={i}>
