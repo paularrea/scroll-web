@@ -9,7 +9,6 @@ import { OnClick } from "../../animations/OnClick";
 import { ReactComponent as Arrow } from "../../svg/Arrow.svg";
 import Masonry from "react-masonry-css";
 import { TabToShow } from "../../animations/TabToShow";
-import { FadeInOnScroll } from "../../animations/FadeInOnScroll";
 
 const breakpointColumnsObj = {
   default: 4,
